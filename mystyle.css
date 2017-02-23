@@ -1,0 +1,29 @@
+
+.colors {
+    visibility: hidden;
+}
+
+.topbar {
+    background: #eeeeee;
+    padding: 10px 0px;
+    height: 55px;
+}
+
+.topbar__search {
+    margin-top: 0px;
+    margin-left: 220px;
+}
+
+.topbar__cart {
+    margin-top: 0px;
+    margin-left: 160px;
+}
+
+.topbar {
+    box-shadow: none;
+}
+
+
+.navbar ul.nav > li > a { 
+    line-height: 65px;
+}

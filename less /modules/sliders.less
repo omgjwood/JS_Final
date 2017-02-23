@@ -1,0 +1,52 @@
+/*
+
+=====================
+SLIDERS
+=====================
+
+*/
+
+#main-slider { .opacity(0);
+
+               .item {padding: 40px; text-align: center; height: 500px; background-size: cover; color: #fff; 
+                      h1, h2, h3, h4, h5, h6,p  {color: #fff;   text-shadow: @carousel-text-shadow;}
+                      @media (min-width: @screen-lg-min) {
+                          .content {position: relative; top: 50%; .translate(0,-50%);}
+                          height: 600px;
+                          p {font-size: @font-size-large;}
+                      }
+
+               }
+
+}
+
+#intro-slider {.opacity(0); position: relative; width: 100%; height: 90%; height: calc(~"100% - 160px");
+
+               .owl-wrapper-outer, .owl-wrapper, .owl-item {height: 100%; }
+
+               .item {padding: 40px; text-align: center; height: 100%; background-size: cover; color: #fff; 
+                      h1, h2, h3, h4, h5, h6,p  {color: #fff;   text-shadow: @carousel-text-shadow;}
+                      .content {position: relative; z-index:3;}
+                      @media (min-width: @screen-lg-min) {
+                          .content {top: 50%; .translate(0,-50%);}
+                          p {font-size: @font-size-large;}
+                      }
+
+               }
+
+               .overlay {display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #000; .opacity(0.4); z-index:2;}
+
+}
+
+.box.slideshow, #main-slider, #intro-slider {
+    ul li div {width: 100%;}
+
+    .owl-controls {position: absolute; right: 20px; bottom: 20px;}
+    .owl-controls .owl-buttons {display: none;}
+
+    .owl-controls .owl-page.active span,
+    .owl-controls.clickable .owl-page:hover span{
+        background: @brand-primary;
+    }
+
+}
