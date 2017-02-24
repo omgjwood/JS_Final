@@ -81,7 +81,7 @@
       </div>
       <div class="row page-top">
         <div class="col-sm-6 col-sm-offset-3">
-          <h1>Checkout<br>Address</h1>
+            <h1>Checkout</h1>
         </div>
       </div>
       <div id="checkout" class="col-md-9">
@@ -89,10 +89,8 @@
           <form method="post" action="checkout2.html">
             <ul class="nav nav-pills nav-justified">
               <li class="active"><a href="#"><i class="fa fa-map-marker"></i><br>Address</a></li>
-              <li class="disabled"><a href="#"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
-              <li class="disabled"><a href="#"><i class="fa fa-money"></i><br>Payment Method</a></li>
-              <li class="disabled"><a href="#"><i class="fa fa-eye"></i><br>Order Review</a></li>
             </ul>
+            <div id="accordion">
             <div class="content">
               <div class="row">
                 <div class="col-sm-6">
@@ -160,7 +158,49 @@
                   </div>
                 </div>
               </div>
+            </div><!--end of "conent" div class!-->
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="#"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
+            </ul>
+            <div class="content clearfix"> 
+              <div class="col-sm-6">
+                <div class="box shipping-method">
+                  <h4>UPS Ground</h4>
+                  <p>$10.00</p>
+                  <div class="box-footer text-center">
+                    <input type="radio" name="delivery" value="0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box shipping-method">
+                  <h4>UPS 3 Day Select</h4>
+                  <p>$15.00</p>
+                  <div class="box-footer text-center">
+                    <input type="radio" name="delivery" value="1">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box shipping-method">
+                  <h4>UPS 2nd Day Air</h4>
+                  <p>$20.00</p>
+                  <div class="box-footer text-center">
+                    <input type="radio" name="delivery" value="2">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box shipping-method">
+                  <h4>UPS Next Day Air</h4>
+                  <p>$38.00</p>
+                  <div class="box-footer text-center">
+                    <input type="radio" name="delivery" value="3">
+                  </div>
+                </div>
+              </div>
             </div>
+            
             <div class="box-footer">
               <div class="pull-left"><a href="basket.html" class="btn btn-default"><i class="fa fa-chevron-left"></i>Back to basket</a></div>
               <div class="pull-right">
