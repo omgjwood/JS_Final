@@ -90,7 +90,7 @@
             <ul class="nav nav-pills nav-justified">
               <li class="active"><a href="#"><i class="fa fa-map-marker"></i><br>Address</a></li>
             </ul>
-            <div id="accordion">
+        
             <div class="content">
               <div class="row">
                 <div class="col-sm-6">
@@ -199,12 +199,75 @@
                   </div>
                 </div>
               </div>
+            </div><!--end of the "delivery" content!-->
+            
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="#"><i class="fa fa-money"></i><br>Payment Method</a></li>
+            </ul>
+            <div class="content clearfix">
+              <div class="col-sm-6">
+                <div class="box payment-method">
+                  <h4>Paypal</h4>
+                  <p>We all love it.</p>
+                  <div class="box-footer text-center">
+                    <input type="radio" name="payment" value="0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box payment-method">
+                  <h4>Payment gateway</h4>
+                  <p>Mastercard and VISA only.</p>
+                  <div class="box-footer text-center">
+                    <input type="radio" name="payment" value="1">
+                  </div>
+                </div>
+              </div>
+            </div><!--end of payment method!-->
+            
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="#"><i class="fa fa-eye"></i><br>Order Review</a></li>
+            </ul>
+            <div class="content">
+              <div class="table-responsive">
+                <table class="table">
+                <tbody>
+                  <tr> 
+                    <td><a href="detail.html"><img src="images/bag1.jpg" alt="White Blouse Armani"></a></td>
+                    <td><a href="detail.html">MEDIUM STREAMLINE TOTE / ROAD TRIP</a></td>
+                    <td><input type="number" value="1" class="form-control"></td>
+                    <td>$128.00</td>
+                    <td>$0.00</td>
+                    <td>$128.00</td>
+                    <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td><a href="detail.html"><img src="images/pouch.jpg" alt="White Blouse Armani"></a></td>
+                    <td><a href="detail.html">POUCH / ROAD TRIP</a></td>
+                    <td><input type="number" value="1" class="form-control"></td>
+                    <td>$44.00</td>
+                    <td>$0.00</td>
+                    <td>$44.00</td>
+                    <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                  </tr>
+                  <tr> 
+                    <td><a href="detail.html"><img src="images/corkboard.jpg" alt="White Blouse Armani"></a></td>
+                    <td><a href="detail.html">USA CORKBOARD</a></td>
+                    <td><input type="number" value="1" class="form-control"></td>
+                    <td>$50.00</td>
+                    <td>$0.00</td>
+                    <td>$50.00</td>
+                    <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
             </div>
             
             <div class="box-footer">
-              <div class="pull-left"><a href="basket.html" class="btn btn-default"><i class="fa fa-chevron-left"></i>Back to basket</a></div>
+              <div class="pull-left"><a href="basket.html" class="btn btn-default"><i class="fa fa-chevron-left"></i>Keep Shopping</a></div>
               <div class="pull-right">
-                <button type="submit" class="btn btn-primary">Continue to Delivery Method<i class="fa fa-chevron-right"></i></button>
+                <button type="submit" class="btn btn-primary">Place Order<i class="fa fa-chevron-right"></i></button>
               </div>
             </div>
           </form>
