@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("#checkout").accordion();
+    $("#checkout_accordion").accordion();
 });
