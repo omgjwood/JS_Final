@@ -1,17 +1,19 @@
 $(document).ready(function() {
     $("#product").submit(function(e) {
         e.preventDefault();
-        itemPrice = $(".price").text();
-        itemName = $(".product__heading").text();
-        itemImg = $("#main_product_img").attr('src');
+        itemPrice = $("#item_price").text();
+        itemName = $("#item_name").text();
+        itemImg = $("#item_main_img").attr('src');
         itemQty = $("#quantity").val();
         itemUrl = window.location.href;
+        itemProductID = $("#item_productID").val();
         
         product = {"itemPrice": itemPrice,
                    "itemName": itemName,
                    "itemImg": itemImg,
                    "itemQty": itemQty,
-                   "itemUrl": itemUrl};
+                   "itemUrl": itemUrl,
+                   "itemProductID": itemProductID};
     
         
     console.log(product);    
@@ -20,6 +22,7 @@ $(document).ready(function() {
     console.log(product.itemName);
     console.log(product.itemQty);
     console.log(product.itemUrl);
+    console.log(product.itemProductID);
     });
    
 });

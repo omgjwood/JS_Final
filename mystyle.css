@@ -30,7 +30,7 @@
 
 #checkout .nav > li.active > a, #checkout .nav > li.active > a:hover, #checkout .nav > li.active > a:focus {
     color: #fff;
-    width: 200px;
+    width: 100%;
     background-color: #f1404b;
 }
 
