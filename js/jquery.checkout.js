@@ -27,7 +27,9 @@ pbh_cart.products.forEach(function(p) {
     // get total price for current product,
     // it's the itemPrice * itemQty
     // also have to subtract item discount
-    var currentItemTotal = p.itemPrice * p.itemQty;
+    var currentItemTotal = (p.itemPrice * p.itemQty).toFixed(2);
+    console.log(p.itemPrice);
+    console.log(p.itemQty);
 
     // build markup string
     var html = [
@@ -45,7 +47,7 @@ pbh_cart.products.forEach(function(p) {
             '<td>$0.00</td>',
             '<td>$' + currentItemTotal + '</td>',
             '<td>',
-                '<a href="#" id="trashItem" val="' + p.itemProductID + '"><i id="trashItem" class="fa fa-trash-o"></i></a>',
+                '<a href="#" class="trashItem" val="' + p.itemProductID + '"><i class="fa fa-trash-o"></i></a>',
             '</td>',
         '</tr>',
     ].join("\n");
@@ -55,7 +57,36 @@ pbh_cart.products.forEach(function(p) {
 
 }); // end foreach product loop
 
-
+var trash_Items = document.querySelectorAll("#checkoutcart .trashItem");
+for (var i = 0; i < trash_Items.length; i++) {
+        trash_Items[i].onclick = function(e) {
+            e.preventDefault();
+            
+            //get product id from element
+            var trashProduct = $(this).val();
+            
+            //get shopping cart object
+            var pbh_cart = JSON.parse(localStorage.pbh_cart);
+            
+            //loop through cart itmes, compare product ids
+            //pbh_cart.products.forEach(function(p) { 
+            for (var i = 0; i < pbh_cart.products.length; i++) {
+                //remove matching productIDs from cart
+                if(pbh_cart.products[i].itemProductID==trashProduct){
+                    pbh_cart.products.splice(i,1);
+                }
+            }
+            
+            //remove current item from page
+            $(this).parent("tr").remove();
+            
+            //return cart to local storage
+            localStorage.setItem ("pbh_cart", JSON.stringify(pbh_cart));
+            
+            
+            //update order summary
+        }
+}
 
 
 

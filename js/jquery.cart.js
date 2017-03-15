@@ -11,7 +11,7 @@ $(document).ready(function() {
     /*this is where we created the function for collecting the product information when clicking the "add to cart button*/              
     $("#product").submit(function(e) {
         e.preventDefault();
-        itemPrice = $("#item_price").text();
+        itemPrice = Number($("#item_price").text()).toFixed(2);
         itemName = $("#item_name").text();
         itemImg = $("#item_main_img").attr('src');
         itemQty = Number($("#quantity").val());
