@@ -20,6 +20,8 @@ $(document).ready(function() {
         itemUrl = window.location.href;
         itemProductID = $("#item_productID").val();
         
+        
+   /*this is where we put the stuf in "product*/     
         product = {"itemPrice": itemPrice,
                    "itemName": itemName,
                    "itemImg": itemImg,
@@ -29,7 +31,7 @@ $(document).ready(function() {
         
         addToCart(product);
         
-        /*
+        /*console.logs
         console.log(product);    
         console.log(product.itemPrice);
         console.log(product.itemImg);
@@ -39,6 +41,8 @@ $(document).ready(function() {
         console.log(product.itemProductID); */
     });
     
+    
+    /* we created the function for the product. */
     function addToCart(product) {
         //get cart object from local storage, unstring it
         var pbh_cart = JSON.parse(localStorage.pbh_cart);
