@@ -1,10 +1,9 @@
 $(document).ready(function() {
-    
 
-    /*this is where we are creating the local storage. at first its saying if the local storage ISNT there then it needs to be created.  Then we are creating the local sotrage by creating a var of pbh_cart.*/ 
+    /*this is where we are creating the local storage. at first its saying if the local storage ISNT there then it needs to be created.  Then we are creating the local sotrage by creating a object of pbh_cart.*/ 
     if(!localStorage.getItem("pbh_cart")) {
        var pbh_cart = {};
-       pbh_cart.products = [];
+       pbh_cart.products = [];/* adding an array*/
        localStorage.setItem ("pbh_cart", JSON.stringify(pbh_cart));
     }
     
