@@ -1,7 +1,6 @@
 $(document).ready(function() {
     
-    
-    
+
     /*this is where we are creating the local storage. at first its saying if the local storage ISNT there then it needs to be created.  Then we are creating the local sotrage by creating a var of pbh_cart.*/ 
     if(!localStorage.getItem("pbh_cart")) {
        var pbh_cart = {};
