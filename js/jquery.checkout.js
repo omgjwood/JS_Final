@@ -41,7 +41,7 @@ pbh_cart.products.forEach(function(p) {
                 '<a href="' + p.itemUrl + '">' + p.itemName + '</a>',
             '</td>',
             '<td>',
-                '<input value="' + p.itemQty + '" class="form-control" type="number">',
+                '<input value="' + p.itemQty + '" class="form-control product-quantity" type="number">',
             '</td>',
             '<td>$' + p.itemPrice + '</td>',
             '<td>$0.00</td>',
@@ -87,7 +87,27 @@ for (var i = 0; i < trash_Items.length; i++) {
             //update order summary
         }
 }
+    //clicking on udate cart button
+    function updateCart () {
+        // loop through each product
+        
+        //get quanity
+        
+        //get unit price 
+        
+        //update total
+        
+        //start acc. subtotal
+        
+        //after product loop update order summary sidebar
+        
+        //update subtotal
+        
+        //update total
+        
+    
+    }
 
-
+    
 
 }); // end document.ready();
